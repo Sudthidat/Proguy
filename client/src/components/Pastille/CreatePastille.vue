@@ -75,7 +75,8 @@ export default {
 <style scoped>
 .background-image {
     text-align: center;
-    background-image: linear-gradient(rgb(202, 188, 193));
+    /* background-image: linear-gradient(rgb(202, 188, 193)); */
+    background-image: url('~@/pic/bg3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;

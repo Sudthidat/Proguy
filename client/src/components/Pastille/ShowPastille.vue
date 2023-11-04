@@ -51,8 +51,8 @@ export default {
 <style scoped>
 .background-image {
     text-align: center;
-    background-color: rgb(208, 222, 205);
-     /* background-image: url('~@/pic/bg.jpg'); */
+    /* background-color: rgb(208, 222, 205); */
+    background-image: url('~@/pic/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
