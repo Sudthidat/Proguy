@@ -27,8 +27,8 @@
                             <input type="text" v-model="pastille.Price" class="form-control" id="price">
                         </p>
                         <p>
-                            <button type="submit" class="btn btn-primary float-right">ยืนยัน</button>
-                            <button v-on:click="navigateTo('/pastilles')" class="btn btn-primary float-right">ย้อนกลับ</button>
+                            <button type="submit" class="btn btn-primary float-right">Confirm</button>
+                            <button v-on:click="navigateTo('/pastilles')" class="btn btn-primary float-right">Back</button>
                         </p>
                     </center>
                 </form>

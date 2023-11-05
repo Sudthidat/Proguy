@@ -9,7 +9,7 @@
             <br>
             <div class="subhead d-flex justify-content-between align-items-center mx-3">
                 <h2 class="text-left mb-0">Information on all {{ pastilles.length }} types of medicines</h2>
-                <button v-on:click="navigateTo('/pastille/create')" class="btn btn-success text-center">เพิ่มยาอมแก้ไอ</button>
+                <button v-on:click="navigateTo('/pastille/create')" class="btn btn-success text-center">Add medicine</button>
             </div> <br>
             <div class="container-fluid ">
 
@@ -31,10 +31,10 @@
                             <td class="align-middle">{{ pastille.Price }}</td>
                             <td>
                                 <button v-on:click="navigateTo('/pastille/' + pastille.id)"
-                                    class="btn btn-primary text-center">ดูข้อมูลยา</button>
+                                    class="btn btn-primary text-center">View data</button>
                                 <button v-on:click="navigateTo('/pastille/edit/' + pastille.id)"
-                                    class="btn btn-warning text-center">แก้ไขข้อมูล</button>
-                                <button v-on:click="deletePastille(pastille)" class="btn btn-danger text-center">ลบข้อมูล</button>
+                                    class="btn btn-warning text-center">Edit data</button>
+                                <button v-on:click="deletePastille(pastille)" class="btn btn-danger text-center">Delete data</button>
 
                             </td>
                         </tr>
@@ -69,7 +69,7 @@ export default {
             this.$router.push(route)
         },
         async deletePastille(pastille) {
-            let result = confirm("ยืนยันที่จะลบข้อมูล?")
+            let result = confirm("Confirm to delete data?")
             if (result) {
                 try {
                     await PastilleService.delete(pastille)

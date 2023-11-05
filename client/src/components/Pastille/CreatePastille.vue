@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <br>
             <div class="container">
-                <h1 class="mt-5">เพิ่มข้อมูล</h1><br>
+                <h1 class="mt-5">Add data</h1><br>
                 <form v-on:submit.prevent="createPastille" class="form">
                     <center>
 
@@ -28,8 +28,8 @@
                             <input type="text" v-model="pastille.Price" class="form-control" id="price">
                         </p>
                         <p>
-                            <button type="submit" class="btn btn-primary float-right">ยืนยัน</button>
-                            <button v-on:click="navigateTo('/pastilles')" class="btn btn-primary float-right">ย้อนกลับ</button>
+                            <button type="submit" class="btn btn-primary float-right">Confirm</button>
+                            <button v-on:click="navigateTo('/pastilles')" class="btn btn-primary float-right">Back</button>
                         </p>
                     </center>
                 </form>

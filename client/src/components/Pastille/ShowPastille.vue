@@ -16,7 +16,7 @@
                     <p class="card-text">Price : {{ pastille.Price }}</p>
                 </div>
                 <div class="card-footer">
-                    <button v-on:click="navigateTo('/pastilles')" class="btn btn-primary">ย้อนกลับ</button>
+                    <button v-on:click="navigateTo('/pastilles')" class="btn btn-primary">Back</button>
                 </div>
             </div>
         </div>
